@@ -1,0 +1,138 @@
+body{
+	background-image: url("http://www.ubuntu-ast.org/largeimages/37/377813_black-background-wallpapers-free-download.jpg");
+	margin: 10px 20px 0 20px;
+}
+
+.container-navbar{
+	background: #15151e;
+	height: 120px;
+}
+
+/*.container-navbar::after{
+	content: '';
+	display: list-item;
+	clear: both;
+}
+*/
+
+.logo{
+	float: left;
+	padding: 10px 0 10px 35px;
+
+}
+
+nav{
+	float: right;
+
+}
+
+nav ul{
+	font-family: verdana;
+	list-style: none;
+}
+
+nav li{
+	display: inline-block;
+	margin: 0 90px 0 auto;
+	padding-top: 25px;
+}
+
+nav ul li a.Login{
+	color: #b7a3a3;
+	font-size: 24px;
+	background-color: #560f0f;
+	border-radius: 6px;
+}
+
+
+nav a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 10px;
+	margin: auto;
+}
+
+nav a:hover{
+	color: #3e5577;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	margin: 0;
+}
+
+.container{
+	color: white;
+	margin: 50px 200px 0 200px;
+}
+
+header{
+	padding: 50px;
+	text-indent: 100px;
+	font-size: 50px;
+}
+
+div.container-scris img{
+	float: right;
+	margin: 0 15px 0 15px;
+	padding: 5px;
+}
+
+
+p1{
+	font-size: 30px;
+	text-indent: 100px;
+}
+
+.container-news{
+	width: 70%;
+	background-color: #260404;
+	padding: 15px;
+	margin: 70px 20px 35px 280px;
+	border-bottom: solid;
+	border-radius: 10px;	
+	
+}
+
+div.news {
+	font-size: 40px;
+	color: #420e0e;
+	padding: 5px;
+	margin-left: 50px;
+}
+
+.container-card{
+	width: 80%;
+	margin: 100px 10px 10px 400px;
+}
+
+.card{
+	box-shadow: 0 4px  8px 0 rgba(0,0,0,0.6);
+	width: 300px;
+	background: #fff;
+	text-align: center;
+	font-size: 16px;
+	font-family: sans-serif;
+	float: left;
+	margin: 10px 90px 10px 10px;
+}
+
+.card:hover{
+	box-shadow: 5px 5px;
+	color: #8c847f;
+	opacity: 0.5;
+
+}
+
+.cardd{
+	padding: 2px 16px;
+}
+
+h2{
+	color: green;
+}
+
+
+
+
+
