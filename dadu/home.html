@@ -4,6 +4,7 @@
 		<title>Home</title>
 		<link rel="stylesheet" type="text/css" href="stylehome.css">
 		<link rel="stylesheet" type="text/css" href="stylelogin.css">
+		<link rel="stylesheet" type="text/css" href="styleregistration.css">
 	</head>
 
 	<body>
@@ -19,9 +20,9 @@
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Profile</a></li>
-						<li><a href="#">Registration</a></li>
+						<li><a href="#" id="myreg">Registration</a></li>
 						<li><a href="#">Contact</a></li>
-						<li><a class="Login" href="#">Log In</a></li>
+						<li><a class="Login" id="mylogin" href="#">Log In</a></li>
 					</ul>
 				</nav>
 			</div>	
@@ -70,6 +71,111 @@
 			</div>
 			
 		</div>
+		<!-- ##################################################### -->
+
+		<div id="loginmodal" class="modal">
+
+  		<!-- Modal content -->
+
+			<div class="container-login">
+
+				<span class="close">&times;</span>
+				<img src="https://www.irlee.info/images/img_avator.png">
+				<input type="text" placeholder="Username">
+				<input type="password" placeholder="Password" id="inputpas">
+				<input type="checkbox" onclick="ShowPassword()">Show Password
+				<br>
+				<button>Sign In</button>
+
+			</div>
+		</div>	
+
+		<!-- ##################################################### -->
+
+		<div id="registrationmodal" class="modal2">
+			<div class="container-reg">
+
+				<span class="close2">&times;</span>
+				<img src="https://www.irlee.info/images/img_avator.png">
+				<input type="text" placeholder="Username">
+				<input type="Email" placeholder="Email">
+				<input type="Password" placeholder="Password">
+				<br>
+				<button>Sign Up</button>
+
+			</div>
+		</div>
+		
+
+		<!-- ##################################################### -->
+
+		<script>
+			// Get the modal
+			var logmodal = document.getElementById('loginmodal');
+
+			// Get the button that opens the modal
+			var btnlog = document.getElementById('mylogin');
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btnlog.onclick = function() {
+    			logmodal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+    			logmodal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+    			if (event.target == logmodal) {
+        		logmodal.style.display = "none";
+    			}
+			}
+
+			// ##################################################### -->
+			// registration
+
+			var regmodal = document.getElementById('registrationmodal');
+
+			// Get the button that opens the modal
+			var btnreg = document.getElementById('myreg');
+
+			// Get the <span> element that closes the modal
+			var span2 = document.getElementsByClassName("close2")[0];
+
+			// When the user clicks the button, open the modal 
+			btnreg.onclick = function() {
+    			regmodal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span2.onclick = function() {
+    			regmodal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+    			if (event.target == regmodal) {
+        		regmodal.style.display = "none";
+    			}
+			}
+
+			//!-- ##########################################################################
+
+			function ShowPassword() {
+    			var x = document.getElementById("inputpas");
+    			if (x.type === "password") {
+        		x.type = "text";
+    			} else {
+        		x.type = "password";
+    			}
+			}
+
+		</script>
 		
 
 	</body>

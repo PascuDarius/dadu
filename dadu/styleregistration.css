@@ -5,13 +5,13 @@ body{
 	
 }
 
-.container-login img{
+.container-reg img{
 	border-radius: 50%;
 	width: 70px;
 	margin-left: 20px;
 }
 
-.container-login{
+.container-reg{
 	width: 300px;
 	padding: 40px;
 	position: absolute;
@@ -22,7 +22,8 @@ body{
 	text-align: center;
 }
 
-.container-login input{
+.container-reg input{
+	border: 0;
 	background: none;
 	display: block;
 	margin: 20px auto;
@@ -36,12 +37,12 @@ body{
 	transition: 0.25s;
 }
 
-.container-login input:focus{
+.container-reg input:focus{
 	width: 280px;
 	border-color: #2ecc71;
 }
 
-.container-login button{
+.container-reg button{
 	border: 0;
 	background: none;
 	display: block;
@@ -57,11 +58,11 @@ body{
 	cursor: pointer;
 }
 
-.container-login button:hover{
+.container-reg button:hover{
 	background: #2ecc71;
 }
 
-.modal{
+.modal2{
 	display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -75,26 +76,16 @@ body{
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.close {
+.close2 {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close2:hover,
+.close2:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-}
-
-.container-login input[type = "checkbox"]{
-	display: inline-block;
-	margin-top: 0px;
-	width: 40px;
-	height: 15px;
-	padding: 5px;
-
-
 }

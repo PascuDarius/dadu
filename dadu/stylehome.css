@@ -59,6 +59,7 @@ nav a:hover{
 	border: 1px solid #aaa;
 	border-radius: 5px;
 	margin: 0;
+	box-shadow: 0 0 20px 10px;
 }
 
 .container{
@@ -109,16 +110,17 @@ div.news {
 .card{
 	box-shadow: 0 4px  8px 0 rgba(0,0,0,0.6);
 	width: 300px;
-	background: #fff;
 	text-align: center;
 	font-size: 16px;
 	font-family: sans-serif;
 	float: left;
 	margin: 10px 90px 10px 10px;
+	border-radius: 10px;
+
 }
 
 .card:hover{
-	box-shadow: 5px 5px;
+	box-shadow: 0 0 20px 20px;
 	color: #8c847f;
 	opacity: 0.5;
 
@@ -126,13 +128,17 @@ div.news {
 
 .cardd{
 	padding: 2px 16px;
+	border-radius: 10px;
+	background-color: #292f3a;
 }
 
 h2{
-	color: green;
+	color: #918a58;
 }
 
-
+h3{
+	color: #444230;
+}
 
 
 
