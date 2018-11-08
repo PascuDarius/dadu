@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+<script>
+function reverseMy() {
+
+	var str = document.getElementById('ss').value;
+	var revStr = "";
+
+    for (var i = str.length - 1; i >= 0 ; i--)
+    	revStr += str[i];
+    
+    
+    alert("Reverse= " +revStr);
+
+}
+
+
+ function removeChar(str, char_pos){
+ 	part1 = str.substring(0, char_pos);
+ 	part2 = str.substring(char_pos + 1, str.length);
+
+ 	return (part1 + part2);
+}
+ 	console.log(removeChar("Hello",2));
+ 	
+
+
+ function divizor3(){
+
+ 	var x = document.getElementById('xx').value;
+
+ 	if(x % 3 == 0){
+ 		alert('true');
+ 	}else{
+ 		alert('false');
+ 	}
+ }
+
+
+function divizor7(){
+
+ 	var y = document.getElementById('yy').value;
+
+ 	if(y % 7 == 0){
+ 		alert('true');
+ 	}else{
+ 		alert('false');
+ 	}
+ }
+
+function isNumeric(){
+
+	var n = document.getElementById('nn').value;
+
+	if (isNaN(n)){
+		alert('false');
+	}else{
+		alert('true');
+	}
+}
+
+
+function sumArray(input){
+             
+ if (toString.call(input) !== "[object Array]")
+    return false;
+      
+            var total =  0;
+            for(var i=0;i<input.length;i++)
+              {                  
+                if(isNaN(input[i])){
+                continue;
+                 }
+                  total += Number(input[i]);
+               }
+             return total;
+            }
+
+
+console.log(sumArray([1,2,5]));
+console.log(sumArray([7,8,-10]));
+console.log(sumArray([5,9,'k','mai',1,3]));
+
+
+
+function hasKey(obj, key) {
+    return obj != null && hasOwnProperty.call(obj, key);
+  }
+console.log(hasKey({red: "red", green: "green", white: "white"}, "green"));
+console.log(hasKey({red: "red", green: "green", white: "white"}, "black"));
+
+
+</script>
+
+</head>
+
+
+
+<body>
+
+<input type="text" id="ss">
+<button type="button" onclick="reverseMy()">Reverse</button>
+
+<br>
+
+<input type="text" id="xx" placeholder="Divizor cu 3">
+<button type="button" onclick="divizor3()">Check3</button>
+<br>
+<input type="text" id="yy" placeholder="Divizor cu 7">
+<button type="button" onclick="divizor7()">Check7</button>
+
+<br>
+
+<input type="text" id="nn" placeholder="Is numeric ?">
+<button type="button" onclick="isNumeric()">Numeric</button>
+
+
+
+
+
+
+</body
