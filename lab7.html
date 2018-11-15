@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+<script>
+
+// Ex  1
+var a = 1;
+function b() {
+    a = 10;
+    return;
+  
+
+     //HINT: local scope
+}
+b();
+
+console.log("a= " + a);
+
+
+
+// Ex 2
+
+for (var i = 0; i < 5; i++) {
+    (function(n) {
+        setTimeout(function(){
+            console.log(n);
+        }, 1000);
+    }(i));
+}
+
+
+// Ex 3
+
+function MyError(message) {
+  this.name = name;
+  this.message = message;
+
+}
+
+
+try {
+  throw new MyError('abc');
+}
+catch (err) {
+  console.log('name:', name='def');
+  console.log('message:', err.message);
+
+}
+
+
+// Ex 4 
+
+class Animal{
+	constructor(type, color){
+		var _type = type;
+		var _color = color;
+	}
+
+	getColor(){
+		return this._color;
+	}
+
+	setColor(color){
+		this._color = color;
+	}
+
+}
+
+class Fish extends Animal{
+	constructor(fishType){
+		var _fishType = fishType;
+	}
+
+
+	getFishType(){
+		return this._fishType;
+	}
+
+}
+
+class Dog extends Animal{
+	constructor(dogType){
+		var _dogType = dogType;
+	}
+
+	getDogType(){
+		return this._dogType = dogType;
+	}
+}
+
+class DogType {
+	constructor(typeName, furColor){
+		var _typeName = typeName;
+		var _furColor = furColor;
+	}
+
+	getFurColor(){
+		return this._furColor = furColor;
+	}
+}
+
+
+// Ex 5
+
+
+setTimeout(() => console.log('Blocked!'), 1000);
+
+function blocking(){
+	let a = 0;
+	for(let i = 0; i < 100; i++){
+		for(let j = 0; j<i * 1000; j++){
+			if(i < j){
+				a++;
+			}
+		}
+	}
+	alert(a);
+}
+
+
+
+
+</script>
+
+</head>
+
+<p>This is a paragraph</p>
+
+<button type="button" onclick="blocking()">Ex5</button>
+
+
+
+</body>
